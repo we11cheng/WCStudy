@@ -4,7 +4,8 @@
 
 ### 配置dumpdecrypted
 - 下载dumpdecrypted最新源码。cd 到自己的工作目录 eg:```cd SourceCode/```
-```git clone https://github.com/stefanesser/dumpdecrypted.git
+```
+git clone https://github.com/stefanesser/dumpdecrypted.git
 ```
 - ```cd dumpdecrypted```
 - ```make```make命令编译生成dumpdecrypted.dylib动态库文件。
