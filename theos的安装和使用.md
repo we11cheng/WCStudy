@@ -36,10 +36,10 @@ echo $THEOS
   Project Name (required): MyFirstReProject  
 
   //deb包的名字（类似于bundle identifier)
-  Package Name [com.yourcompany.myfirstreproject]: com.iosre.myfirstreproject  
+  Package Name [com.yourcompany.myfirstreproject]: com.obizsofi.iosre  
 
   //tweak作者
-  Author/Maintainer Name [System Administrator]: luz 
+  Author/Maintainer Name [System Administrator]: gwc 
 
   //tweak作用对象的bundle identifier
   [iphone/tweak] MobileSubstrate Bundle filter [com.apple.springboard]: com.apple.springboard 
