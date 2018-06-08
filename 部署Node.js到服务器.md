@@ -67,6 +67,47 @@ server.listen(port, hostname, () => {
 
 ```node ~/example.js &```
 
+### 补充：forever也能实现后台运行，而且还能记录输出和错误日志  
+
+1.安装
+```
+npm install forever -g
+```
+
+2.启动服务
+```
+service forever start
+```
+
+3.使用forever启动js文件
+```
+forever start exampleApi.js
+```
+
+4.停止js文件
+
+```
+forever stop app.js
+```
+
+5.启动js文件并输出日志文件
+
+```
+forever start -l forever.log -o out.log -e err.log exampleApi.js
+```
+
+6.重启js文件
+
+```
+7.forever restart exampleApi.js
+```
+
+8.查看正在运行的进程
+
+```
+forever list
+```
+
 - 查看效果
 
 ![](http://p2bzzkn05.bkt.clouddn.com/18-6-7/35979962.jpg)
