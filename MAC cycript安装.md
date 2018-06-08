@@ -19,7 +19,6 @@
 ```
 export cycript_src=/opt/cycript_0.9.594/
 export PATH=$PATH:$cycript_src
-
 ```
 - 使环境变量生效
 
