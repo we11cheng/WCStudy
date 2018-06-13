@@ -7,3 +7,4 @@
 - ```2018-6-8```[Node搭建简单服务器接收请求返回数据](https://github.com/we11cheng/WCMockApiJson)
 - ```2018-6-12```去壳应用收集```repo地址```<https://github.com/we11cheng/WCCrackedCollect>
 - ```2018-6-12```[解决越狱以后cydia市场无法访问网络的问题](https://github.com/we11cheng/WCStudy/blob/master/%E8%B6%8A%E7%8B%B1%E7%9B%B8%E5%85%B3%E8%AE%B0%E5%BD%95.md)
+- ```2018-6-13```[制作自己的pod](https://github.com/we11cheng/WCStudy/blob/master/%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84pod%E5%BA%93.md)
