@@ -41,10 +41,28 @@ pod trunk register gxx@cocoapods.org 'gxx' --description='gxx' macbook pro' --ve
 - 如果所有的步骤都能成功的话，你会受到一份邮件，需要点击验证下。
 
 #### 补充
-```pod trunk me``` 可以查看你已经注册的信息，其中包含你的name、email、since、Pods、sessions，其中Pods为你往CocoaPods提交的所有的Pod！
+```pod trunk me``` 
+
+#### 可以查看你已经注册的信息，其中包含你的name、email、since、Pods、sessions，其中Pods为你往CocoaPods提交的所有的Pod！
+
+```
 pod trunk add-owner PPNetworkHelper gwc@cocoapods.org
+```
+#### 添加其他维护者（如果你的pod是由多人维护的，你也可以添加其他维护者。
+#### 更多用法
+```
+    + add-owner      Add an owner to a pod
+    + delete         Deletes a version of a pod.
+    + deprecate      Deprecates a pod.
+    + info           Returns information about a Pod.
+    + me             Display information about your sessions
+    + push           Publish a podspec
+    + register       Manage sessions
+    + remove-owner   Remove an owner from a pod
+```
 
 - 推送到远程CocoaPods列表
+
 ```
 pod trunk push XX.podspec --verbose
 ```
@@ -57,8 +75,9 @@ pod repo update : 更新仓库
 pod search xxx
 ```
 #### 补充
-#### 如果你使用pod search 发现搜索的库是老的库或者search不到，那么你可以这样试一下
+#### 如果你使用pod search 发现搜索的库是老的库或者search不到，那么你可以这样试一下:
 ```
 1、先: pod setup,
 2、后: rm ~/Library/Caches/CocoaPods/search_index.json
 ```
+
