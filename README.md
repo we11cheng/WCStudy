@@ -11,3 +11,4 @@
 - ```2018-6-13```[git常用命令汇总](https://github.com/we11cheng/WCStudy/blob/master/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 - ```2018-6-14```[Ubuntu服务器安装MongoDB](https://github.com/we11cheng/WCStudy/blob/master/Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85MongoDB.md)
 - ```2018-6-15```[Telegram]```repo地址```<https://github.com/we11cheng/WCTelegram>
+- ```2018-6-15```[Frida配置](https://github.com/we11cheng/WCStudy/blob/master/%E9%85%8D%E7%BD%AEFrida.md)
