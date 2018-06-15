@@ -10,3 +10,4 @@
 - ```2018-6-13```[制作自己的pod](https://github.com/we11cheng/WCStudy/blob/master/%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84pod%E5%BA%93.md)
 - ```2018-6-13```[git常用命令汇总](https://github.com/we11cheng/WCStudy/blob/master/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 - ```2018-6-14```[Ubuntu服务器安装MongoDB](https://github.com/we11cheng/WCStudy/blob/master/Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85MongoDB.md)
+- ```2018-6-15```[Telegram]```repo地址```<https://github.com/we11cheng/WCTelegram>
