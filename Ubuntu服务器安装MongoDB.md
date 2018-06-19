@@ -58,6 +58,13 @@ sudo cat /var/log/mongodb/mongod.log
 ```
 [initandlisten] waiting for connections on port 27017
 ```
+
+- MongoDB配置文件路径(vim查看&修改)
+
+```
+vim /etc/mongod.conf
+```
+
 - MongoDB 卸载
 
 ```
