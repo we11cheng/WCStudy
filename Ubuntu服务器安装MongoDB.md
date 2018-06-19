@@ -20,7 +20,6 @@ echo "deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3
 
 Ubuntu 16.04
 echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
-
 ```
 
 - 更新本地依赖包索引：
@@ -71,7 +70,6 @@ vim /etc/mongod.conf
 sudo apt-get purge mongodb-org*
 sudo rm -r /var/log/mongodb
 sudo rm -r /var/lib/mongodb
-
 ```
 
 #### 官方文档 <https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/?_ga=2.157663545.222669535.1493745656-724007558.1488558955>
