@@ -45,6 +45,19 @@ sudo service mongod start
 sudo service mongod restart
 sudo service mongod stop
 ```
+
+- sudo service mongod start可能出现
+
+``` 
+Unit mongod.service not found
+```
+#### 执行
+```
+sudo systemctl enable mongod
+sudo service mongod restart
+```
+#### 参考链接 <https://askubuntu.com/questions/921753/failed-to-start-mongod-service-unit-mongod-service-not-found>
+
 ### 补充:
 - 查看是否启动成功
 
@@ -73,3 +86,4 @@ sudo rm -r /var/lib/mongodb
 ```
 
 #### 官方文档 <https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/?_ga=2.157663545.222669535.1493745656-724007558.1488558955>
+
