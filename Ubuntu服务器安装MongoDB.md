@@ -86,4 +86,6 @@ sudo rm -r /var/lib/mongodb
 ```
 
 #### 官方文档 <https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/?_ga=2.157663545.222669535.1493745656-724007558.1488558955>
+#### 切记开启服务器27017端(宝塔面板放行端口不管用,采坑了) 参考阿里云安全组设置
+![](http://p2bzzkn05.bkt.clouddn.com/18-6-20/43353613.jpg)
 
