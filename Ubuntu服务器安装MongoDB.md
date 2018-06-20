@@ -77,7 +77,36 @@ sudo cat /var/log/mongodb/mongod.log
 vim /etc/mongod.conf
 ```
 
-- MongoDB 卸载
+### mongod.conf参考配置，配置如下：
+```
+# mongod.conf
+
+# for documentation of all options, see:
+#   http://docs.mongodb.org/manual/reference/configuration-options/
+
+# Where and how to store data.
+storage:
+  dbPath: /var/lib/mongodb
+  journal:
+    enabled: true
+#  engine:
+#  mmapv1:
+#  wiredTiger:
+
+# where to write logging data.
+systemLog:
+  destination: file
+  logAppend: true
+  path: /var/log/mongodb/mongod.log
+
+# network interfaces
+net:
+  port: 27017
+  bindIp: 0.0.0.0
+```
+#### 补充：bindIp: 0.0.0.0 表示允许所有ip访问。
+
+### MongoDB 卸载
 
 ```
 sudo apt-get purge mongodb-org*
@@ -86,6 +115,4 @@ sudo rm -r /var/lib/mongodb
 ```
 
 #### 官方文档 <https://docs.mongodb.com/master/tutorial/install-mongodb-on-ubuntu/?_ga=2.157663545.222669535.1493745656-724007558.1488558955>
-#### 切记开启服务器27017端(宝塔面板放行端口不管用,采坑了) 参考阿里云安全组设置
-![](http://p2bzzkn05.bkt.clouddn.com/18-6-20/43353613.jpg)
 
