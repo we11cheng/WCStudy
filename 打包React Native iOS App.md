@@ -1,6 +1,6 @@
 ### 打包React Native iOS App (不需要每次开启终端服务)
 
-#### 第一步：导出js bundle包和图片资源
+- 导出js bundle包和图片资源
 - 我们无法通过命令一步进行导出React Native iOS应用。我们需要将JS部分的代码和图片资源等打包导出，然后通过XCode将其添加到iOS项目中。
 - 导出js bundle的命令，在React Native项目的根目录下执行：
 
@@ -26,4 +26,4 @@ react-native bundle --entry-file index.ios.js --platform ios --dev false --bundl
   return YES;
 }
 ```
-####上述代码的作用是让React Native去使用我们刚才导入的jsbundle，这样以来我们就摆脱了对本地nodejs服务器的依赖。
+#### 上述代码的作用是让React Native去使用我们刚才导入的jsbundle，这样以来我们就摆脱了对本地nodejs服务器的依赖。
