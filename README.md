@@ -16,3 +16,4 @@
 - ```2018-6-21```[打包React Native iOS App](https://github.com/we11cheng/WCStudy/blob/master/%E6%89%93%E5%8C%85React%20Native%20iOS%20App.md)
 - ```2018-6-22```[Method Swizzing 实践](https://github.com/we11cheng/WCStudy/blob/master/Method%20Swizzling%E5%AE%9E%E8%B7%B5.md)
 - ```2018-6-22```[MacVim配置文件备份](https://github.com/we11cheng/WCMacVim/blob/master/README.md)```repo地址```<https://github.com/we11cheng/WCMacVim>
+- ```2018-6-25```[SDWebImage加载高清大图内存过高解决方案](https://blog.csdn.net/benyoulai5/article/details/50462586)
