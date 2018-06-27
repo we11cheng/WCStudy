@@ -18,3 +18,4 @@
 - ```2018-6-22```[MacVim配置文件备份](https://github.com/we11cheng/WCMacVim/blob/master/README.md)```repo地址```<https://github.com/we11cheng/WCMacVim>
 - ```2018-6-25```[SDWebImage加载高清大图内存过高解决方案](https://blog.csdn.net/benyoulai5/article/details/50462586)
 - ```2018-6-26```[CocoaPods小记](https://github.com/we11cheng/WCStudy/blob/master/CocoaPods%E5%B0%8F%E8%AE%B0.md)
+- ```2018-6-27```[电子书收集](https://github.com/we11cheng/WCEbookCollect/blob/master/README.md)```repo地址```<https://github.com/we11cheng/WCEbookCollect>
