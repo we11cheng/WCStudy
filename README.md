@@ -20,3 +20,4 @@
 - ```2018-6-26```[CocoaPods小记](https://github.com/we11cheng/WCStudy/blob/master/CocoaPods%E5%B0%8F%E8%AE%B0.md)
 - ```2018-6-27```[电子书收集](https://github.com/we11cheng/WCEbookCollect/blob/master/README.md)```repo地址```<https://github.com/we11cheng/WCEbookCollect>
 - ```2018-6-27```[Nginx Note](https://github.com/we11cheng/WCStudy/blob/master/Nginx%20Note.md)
+- ```2018-6-28```[Ubuntu安装Nginx](https://github.com/we11cheng/WCStudy/blob/master/Ubuntu%E5%AE%89%E8%A3%85Nginx.md)
