@@ -49,3 +49,25 @@ sudo netstat -anp | grep nginx
 ```
 
 #### 参考链接 <https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04>
+### 2018-6-28 补充
+- 版本
+
+```
+nginx -v
+```
+- 检测配置是否正确
+
+```
+sudo nginx -t
+```
+- [emerg]: bind() to 0.0.0.0:80 failed (98: Address already in use) 端口被占用
+
+```
+sudo fuser -k 80/tcp
+sudo systemctl start nginx
+```
+- 查看所有端口使用情况
+
+```
+sudo netstat -natp
+```
