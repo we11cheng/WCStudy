@@ -1,4 +1,4 @@
-### Nginx Note
+### Nginx Note (服务器装了宝塔面板，后来发现宝塔面板就是个坑，很多关于Nginx配置文件路径不一样，已从良:卸载了宝塔面板重新配置)
 ### Install Nginx
 ```
 sudo apt-get update
