@@ -31,21 +31,24 @@ git clone https://github.com/cnpm/nvm.git ~/.nvm && cd ~/.nvm && git checkout `g
 
 - 编辑exampleApi.js ```vim exampleApi.js```
 
-```const http = require('http');
+- 运行项目
+
+```
+const http = require('http');
 const hostname = '0.0.0.0';
-const port = 30001;
+const port = 3389;
 var data = {
     'code':'000',
     'message':'message',
     'lists':[
         {
-          'naem':'小明',
+          'name':'lilei',
             'age': '12',
-            'sex':'男'
+            'sex':'M'
         },{
-          'naem':'小红',
+          'name':'hanmeimei',
             'age': '112',
-            'sex':'女'
+            'sex':'F'
         }
     ]
 
@@ -59,13 +62,14 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
-- 运行项目
 
-```node ~/example.js```
+```node ~/exampleApi.js```
 
 - 后台运行 
 
-```node ~/example.js &```
+```node ~/exampleApi.js &```
+
+- 访问<http://47.98.177.125:3389/>
 
 ### 补充：forever也能实现后台运行，而且还能记录输出和错误日志  
 
@@ -110,7 +114,7 @@ forever list
 
 - 查看效果
 
-![](http://p2bzzkn05.bkt.clouddn.com/18-6-7/35979962.jpg)
+![](http://p2bzzkn05.bkt.clouddn.com/18-6-30/49287068.jpg)
 
 ### 补充：
 #### 查看端口使用情况
