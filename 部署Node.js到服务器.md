@@ -121,13 +121,13 @@ forever list
 ```ps -ef | grep node```
 #### 查看某一个端口
 ```
-netstat -ap | grep 30001
+netstat -ap | grep 3389
 ```
 eg:
 
 ```
-root@ubuntu:~# netstat -ap | grep 30001
-tcp        0      0 *:30001                 *:*                     LISTEN      30134/node     
+root@ubuntu:~# netstat -ap | grep 3389
+tcp        0      0 *:3389                  *:*                     LISTEN      6162/node
 ```
 
 #### Linux关闭nodejs服务
@@ -148,8 +148,8 @@ root     30087 28754  0 15:42 pts/4    00:00:00 grep --color=auto node
 root@ubuntu:~# kill 30080
 [1]+  Terminated              node exampleApi.js
 root@ubuntu:~# ps -ef | grep node
-root     30098 28754  0 15:44 pts/4    00:00:00 grep --color=auto node
-root@ubuntu:~# 
+root      6162  5422  0 12:28 pts/1    00:00:00 node exampleApi.js
+root      6195  5422  0 12:42 pts/1    00:00:00 grep --color=auto node
 
 ```
 
