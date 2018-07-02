@@ -33,11 +33,13 @@ dumpdecrypted.dylib: signed Mach-O universal (armv7 armv7s arm64) [dumpdecrypted
 - 拷贝拷贝dumpdecrypted.dylib到iPhone。
 - 我们要把电脑上生成的dumpdecrypted.dylib放在砸壳app的沙盒路径下。
 - 切换到电脑dumpdecrypted工作目录：
+
 ```
 scp /Users/admin/SourceCode/dumpdecrypted/dumpdecrypted.dylib root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/
 root@192.168.2.200's password: 
 dumpdecrypted.dylib                                                                   100%  203KB   1.9MB/s   00:00    
 ```
+
 - 切换到iphone终端，切换到app沙盒文件路径下。   
 
 ```
