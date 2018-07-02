@@ -3,12 +3,25 @@
 ### class-dump可以将Mach-O文件中的Objective-C运行时的声明信息导出，即编写OC代码时的.h文件。class-dump只能导出未加密的app头文件，因此我们想要分析头文件就要先对app进行dumpdecrypted（砸壳）操作。
 
 ### 配置dumpdecrypted
-- 下载dumpdecrypted最新源码。cd 到自己的工作目录 eg:```cd SourceCode/```
+- 下载dumpdecrypted最新源码。cd 到自己的工作目录 eg:
+
 ```
+cd SourceCode
 git clone https://github.com/stefanesser/dumpdecrypted.git
 ```
-- ```cd dumpdecrypted```
-- ```make```make命令编译生成dumpdecrypted.dylib动态库文件。
+
+- 切换到umpdecrypted 文件目录
+
+```
+cd dumpdecrypted
+```
+- 执行make命令
+
+```
+make
+```
+
+##### make命令编译生成dumpdecrypted.dylib动态库文件。
 
 #### 需要注意的地方：生成的dumpdecrypted.dylib 需要对它进行证书签名。参考：
 ```
@@ -40,21 +53,22 @@ root@192.168.2.200's password:
 dumpdecrypted.dylib                                                                   100%  203KB   1.9MB/s   00:00    
 ```
 
-- 切换到iphone终端，切换到app沙盒文件路径下。   
+- 切换到iphone终端，切换到app沙盒文件路径下执行DYLD_INSERT_LIBRARIES。   
 
 ```
 iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0 root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.app/Omnistore
+```
+##### 第一次执行可能如下错误：
+```
 dyld: could not load inserted library 'dumpdecrypted.dylib' because no suitable image found.  Did find:
-	dumpdecrypted.dylib: required code signature missing for 'dumpdecrypted.dylib'
-
-	/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib: required code signature missing for '/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib'
-
-
+dumpdecrypted.dylib: required code signature missing for 'dumpdecrypted.dylib'
+/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib: required code signature missing for '/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib'
 Abort trap: 6
 ```
-#### 如果DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib 命令报这个错的话。需要对dumpdecrypted.dylib签名。见配置dumpdecrypted需要注意的地方。
+##### 错误提示也很明确。需要对dumpdecrypted.dylib签名。见配置dumpdecrypted需要注意的地方。
 
-- 正常输出    
+- 签名过后重新DYLD_INSERT_LIBRARIES，正常输出如下：
+    
 ```
 [+] detected 32bit ARM binary in memory.
 [+] offset to cryptid found: @0xb6a90(from 0xb6000) = a90
@@ -72,17 +86,20 @@ Abort trap: 6
 [+] Closing dump file
 ```
 - 查看文件.decrypted。
+
 ```
 iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0 root# ls
 Documents  Omnistore.app  Omnistore.decrypted  dumpdecrypted.dylib  iTunesArtwork  iTunesMetadata.plist
 ```
 - 然后把Omnistore.decrypted 通过scp命令复制到mac目录下。
 
-```admindeMBP-4:dumpdecrypted admin$ scp root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.decrypted /Users/admin/Desktop/decrypted
+```
+admindeMBP-4:dumpdecrypted admin$ scp root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.decrypted /Users/admin/Desktop/decrypted
 root@192.168.2.200's password: 
 Omnistore.decrypted         
 ```
 - otool 检测是否加壳 
+
 ```
 admindeMBP-4:decrypted admin$ otool -l Omnistore.decrypted | grep -B 2 crypt
 Omnistore.decrypted:
@@ -95,6 +112,7 @@ Omnistore.decrypted:
 admindeMBP-4:decrypted admin$ 
 ```
 - class-dump导出头文件
+
 ```
 admindeMBP-4:dumpdecrypted admin$ class-dump -S -s -H /Users/admin/Desktop/decrypted/Omnistore.decrypted -0 /Users/admin/Mygit/dump_header
 class-dump: invalid option -- 0
@@ -102,8 +120,4 @@ class-dump 3.5 (64 bit) (Debug version compiled Sep 17 2017 16:24:48)
 ```
 
 ### /Users/admin/Mygit/dump_header 导出的头文件路径。
-
-
-
-
 
