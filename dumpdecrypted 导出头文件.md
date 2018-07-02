@@ -75,6 +75,7 @@ iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0 r
 Documents  Omnistore.app  Omnistore.decrypted  dumpdecrypted.dylib  iTunesArtwork  iTunesMetadata.plist
 ```
 - 然后把Omnistore.decrypted 通过scp命令复制到mac目录下。
+
 ```admindeMBP-4:dumpdecrypted admin$ scp root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.decrypted /Users/admin/Desktop/decrypted
 root@192.168.2.200's password: 
 Omnistore.decrypted         
