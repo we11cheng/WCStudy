@@ -25,3 +25,4 @@
 - ```2018-7-2```[ubuntu防火墙实践](https://github.com/we11cheng/WCStudy/blob/master/ubuntu%E9%98%B2%E7%81%AB%E5%A2%99.md)
 - ```2018-7-3```[阿里云SSL配置](https://github.com/we11cheng/WCStudy/blob/master/SSL%20Configuration.md)
 - ```2018-7-3```[frida-ios-dump砸壳整理](https://github.com/we11cheng/WCStudy/blob/master/frida-ios-dump.md)
+- ```2018-7-4```[Mac上传文件到Linux服务器](https://www.jianshu.com/p/1afd25e7459d)
