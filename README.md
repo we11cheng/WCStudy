@@ -26,3 +26,4 @@
 - ```2018-7-3```[阿里云SSL配置](https://github.com/we11cheng/WCStudy/blob/master/SSL%20Configuration.md)
 - ```2018-7-3```[frida-ios-dump砸壳整理](https://github.com/we11cheng/WCStudy/blob/master/frida-ios-dump.md)
 - ```2018-7-4```[Mac上传文件到Linux服务器](https://www.jianshu.com/p/1afd25e7459d)
+- ```2018-7-4```VIP视频播放<https://github.com/we11cheng/WCVIPmovie>
