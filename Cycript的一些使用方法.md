@@ -6,6 +6,26 @@
 ![](https://github.com/we11cheng/WCImageHost/raw/master/91530782040_.pic.jpg)
 
 - 连接ssh
+#### 可能出现的问题
+
+```
+admindeMBP-4:~ admin$ ssh -p 2222 root@127.0.0.1
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:r1N7OuW80egI2Mek2kvT9snEcbikdljw9U8XYNZd+EM.
+Please contact your system administrator.
+Add correct host key in /Users/admin/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /Users/admin/.ssh/known_hosts:14
+RSA host key for [127.0.0.1]:2222 has changed and you have requested strict checking.
+Host key verification failed.
+```
+
+#### 解决方法。删除/Users/admin/.ssh/known_hosts [127.0.0.1]:2222条目,[admin]为当前用户名。
 
 - 开始使用Cycript
 
