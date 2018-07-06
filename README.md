@@ -28,3 +28,4 @@
 - ```2018-7-4```[Mac上传文件到Linux服务器](https://www.jianshu.com/p/1afd25e7459d)
 - ```2018-7-4```VIP视频播放<https://github.com/we11cheng/WCVIPmovie>
 - ```2018-7-4```[Cycript的一些使用方法](https://github.com/we11cheng/WCStudy/blob/master/Cycript%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.md)
+- ```2018-7-6```[LLDB&debugServer](https://github.com/we11cheng/WCStudy/blob/master/LLDB%26debugServer.md)

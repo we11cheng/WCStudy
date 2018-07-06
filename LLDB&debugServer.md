@@ -10,7 +10,6 @@
 admindeMBP-4:~ admin$ scp root@192.168.2.117:/Developer/usr/bin/debugserver ~/Downloads/debugserver
 root@192.168.2.117's password: 
 debugserver                                                                           100%   13MB  13.9MB/s   00:00    
-
 ```
 
 - debugserver瘦身(16M减小到4M多)
@@ -33,7 +32,6 @@ x86_64是针对x86架构的64位处理器
 模拟器64位处理器测试需要x86_64架构，
 真机32位处理器需要armv7,或者armv7s架构，
 真机64位处理器需要arm64架构。
-
 ```
 
 - 给 debugserver 添加 task_for_pid 权限
@@ -71,7 +69,6 @@ admindeMBP-4:Downloads admin$ ldid -Sent.xml debugserver
 	</array>
 </dict>
 </plist>
-
 ```
 
 - 将经过处理的 debugserver 拷回iOS
@@ -118,3 +115,5 @@ Target 0: (MobileSMS) stopped.
 <https://juejin.im/post/5af0102ef265da0b8a678bd5>
 
 <https://bbs.pediy.com/thread-203592.htm>
+
+
