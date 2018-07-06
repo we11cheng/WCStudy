@@ -37,7 +37,23 @@ x86_64是针对x86架构的64位处理器
 - 给 debugserver 添加 task_for_pid 权限
 
 #### 下载 <http://iosre.com/ent.xml> 到 OSX 的 ~/Downloads (也就是和 debugserver 同一个目录)。然后运行如下命令：
-
+### 下载保存为ent.xml 内容如下:
+```
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>com.apple.springboard.debugapplications</key>
+	<true/>
+	<key>get-task-allow</key>
+	<true/>
+	<key>task_for_pid-allow</key>
+	<true/>
+	<key>run-unsigned-code</key>
+	<true/>
+</dict>
+</plist>
+```
+### 签名
 ```
 admindeMBP-4:~ admin$ cd Downloads/
 admindeMBP-4:Downloads admin$ ldid -Sent.xml debugserver
