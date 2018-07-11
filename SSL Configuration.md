@@ -142,5 +142,4 @@ server {
 #}
 ```
 
-### 配置http&https共存 注释```ssl on;```即可。
 
