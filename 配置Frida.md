@@ -38,3 +38,13 @@ PID NAME
 XXX XXXXX
 ```
 表示成功
+
+### 查看手机frida-server版本和进程
+```
+iPersistence:/ root# frida-server --version
+12.0.3
+iPersistence:/ root# ps -e |grep frida-server
+  576 ??         0:00.01 /usr/sbin/frida-server
+ 2133 ttys002    0:00.00 grep frida-server
+```
+
