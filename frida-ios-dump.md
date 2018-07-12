@@ -1,5 +1,5 @@
 ## frida-ios-dump 
-### 新手砸壳教程（演示为Python2环境）,前提手机必须越狱。
+### 新手砸壳教程（演示为Python2环境）,前提手机必须越狱&必须通过USB链接SSH。
 
 ### iOS端配置参考（越狱情况下）
 - 打开cydia 添加源：https://build.frida.re
