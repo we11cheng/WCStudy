@@ -1,6 +1,6 @@
+
 ## frida-ios-dump 
 ### 新手砸壳教程（演示为Python2环境）,前提手机必须越狱&必须通过USB链接SSH。
-
 ### iOS端配置参考（越狱情况下）
 - 打开cydia 添加源：https://build.frida.re
 
@@ -29,10 +29,23 @@ Uninstalling a distutils installed project (six) has been deprecated and will be
 sudo pip install frida –upgrade –ignore-installed six
 ```
 
-- 检查是否安装成功 任意mac终端输入```frida-ps -U```有数据返回表示成功安装。
+- 查看frida版本
+
+```
+frida --version
+12.0.3
+```
+
+- 检查frida是否正常运行 任意mac终端输入```frida-ps -U```有数据返回表示成功安装，-U表示USB设备，-ps表示进程。
+
+- 如果确定frida --version有正常返回&USBSSH连接也没问题，还是出现```Waiting for USB device to appear...```本人解决方法是，亲测可以，这个坑踩了很久，还是去<https://github.com/frida/frida>才找到的解决方法。
+
+```
+sudo pip3 install frida-tools
+```
 
 
-## ssh连接iphone
+## USB&SSH连接iPhone
 - 安装usbmuxd（brew安装最简单暴力推荐使用brew安装）。  
 
 ```
@@ -55,27 +68,29 @@ iproxy 2222 22
 ```
 ssh -p 2222 root@127.0.0.1
 ```   
-### 说明：127.0.0.1是默认本机回环地址。
+#### 说明：127.0.0.1是默认本机回环地址。
+
 - 输入ssh密码即可（默认密码alpine，建议修改）修改密码参考链接 <https://www.jianshu.com/p/725843850e1d>
 
-#### ssh连接iphone参考地址 <https://www.jianshu.com/p/bf69cefc5f39>
+#### USB&SSH连接参考地址 <https://www.jianshu.com/p/bf69cefc5f39>
 
 ### 开始砸壳之旅
 
-- 从github下载工程：
+- 从github下载工程：一般情况使用最新的版本，master分支对应Python2，3.x对应Python3版本。
 
 ```
 git clone https://github.com/AloneMonkey/frida-ios-dump 
+
 ```     
 - 安装依赖：
 
 ```
-sudo pip install -r /opt/dump/frida-ios-dump/requirements.txt --upgrade
+cd frida-ios-dump
+sudo pip install -r requirements.txt --upgrade
 ```
 - 修改dump.py参数：
 
 ```
-cd frida-ios-dump
 vim frida-ios-dump/dump.py
 ```
 - 找到如下几行
@@ -89,11 +104,11 @@ Port = 2222
 
 - 修改Password和端口号。和iproxy命令端口号保持一致。
 
-- 执行frida命令：切换到frida-ios-dump目录
 
 - 列举出安装的应用的名字和bundle id 
 
 ```
+cd frida-ios-dump
 python dump.py -l
 ```    
 
@@ -104,7 +119,6 @@ python dump.py bundle id
 ``` 
 - 去壳后的ipa默认在frida-ios-dump目录下。
 
-#### 说明:执行dump命令的时候要确保手机上已经打开你需要砸壳的app。
-### 说明:<https://github.com/AloneMonkey/frida-ios-dump>有对应Python3分支3.x分支。
-
+#### 说明: 执行```dump.py bundle id```命令的时候要确保手机上已经打开你需要砸壳的app。
+### 说明: frida-ios-dump有对应Python3分支3.x分支，大家可以多看看作者最新提交情况。地址 <https://github.com/AloneMonkey/frida-ios-dump>
 
