@@ -1,4 +1,4 @@
-## frida-ios-dump实践
+### frida-ios-dump实践
 ### 新手砸壳教程（python3）,前提手机必须越狱&必须通过USB链接SSH。
 ### iOS端配置参考（越狱情况下）
 - 打开cydia 添加源：https://build.frida.re
@@ -19,7 +19,6 @@ sudo pip3 install frida
 
 ```
 Uninstalling a distutils installed project (six) has been deprecated and will be removed in a future version. This is due to the fact that uninstalling a distutils project will only partially uninstall the project.
-
 ```
 
 - 使用以下命令安装：
@@ -104,7 +103,6 @@ ssh -p 2222 root@127.0.0.1
 
 ```
 git clone https://github.com/AloneMonkey/frida-ios-dump 
-
 ```     
 - 安装依赖：
 
