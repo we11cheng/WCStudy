@@ -33,3 +33,4 @@
 - ```2018-7-16```[iOS Widget Extensions证书配置](https://github.com/we11cheng/WCStudy/blob/master/iOS%20Widget%20Extensions%E8%AF%81%E4%B9%A6%E9%85%8D%E7%BD%AE.md)
 - ```2018-7-17```[Python虚拟环境](https://github.com/we11cheng/WCStudy/blob/master/Python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83.md)
 - ```2018-7-17```[Ubuntu 16.0.4安装Docker](https://github.com/we11cheng/WCStudy/blob/master/Ubuntu%2016.0.4%E5%AE%89%E8%A3%85Docker.md)
+- ```2018-7-18```[阿里云服务器ubuntu 16.04安装mysql](https://github.com/we11cheng/WCStudy/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ubuntu%2016.04%E5%AE%89%E8%A3%85mysql.md)
