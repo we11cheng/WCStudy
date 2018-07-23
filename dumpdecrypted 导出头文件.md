@@ -42,21 +42,29 @@ admindeMBP-4:dumpdecrypted admin$ codesign --force --verify --verbose --sign "iP
 dumpdecrypted.dylib: signed Mach-O universal (armv7 armv7s arm64) [dumpdecrypted]
 ```
 - 使用ssh登录越狱设备 [SSH连接越狱iPhone](https://www.jianshu.com/p/bf69cefc5f39)
-- ```ps -e``` 找到含bundle的路径，只会存在一个。
-- 拷贝拷贝dumpdecrypted.dylib到iPhone。
+
+- 连接成功后输入```ps -e``` 找到含bundle的路径，只会存在一个(也就是目标app)，这一步很重要。
+
+- 拷贝拷贝dumpdecrypted.dylib到目标app沙盒Documents目录下。
+ 
 - 我们要把电脑上生成的dumpdecrypted.dylib放在砸壳app的沙盒路径下。
-- 切换到电脑dumpdecrypted工作目录：
+   ##### 这一步可以使用scp命令或者使用[iFunbox](http://www.i-funbox.com/zh-cn_index.html)配合Apple File Conduit "2"插件，很方便的传输文件。
+   
+ ![](https://github.com/we11cheng/WCImageHost/raw/master/131532338495_.pic.png)
+
+- scp方式传输方式如下(iFunbox和scp二选一)：
 
 ```
-scp /Users/admin/SourceCode/dumpdecrypted/dumpdecrypted.dylib root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/
+scp /Users/admin/SourceCode/dumpdecrypted/dumpdecrypted.dylib root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documents
 root@192.168.2.200's password: 
 dumpdecrypted.dylib                                                                   100%  203KB   1.9MB/s   00:00    
 ```
 
-- 切换到iphone终端，切换到app沙盒文件路径下执行DYLD_INSERT_LIBRARIES。   
+- dumpdecrypted.dylib添加成功后，切换到iphone ssh，切换到app沙盒文件路径下执行DYLD_INSERT_LIBRARIES命令，如下: 
 
 ```
-iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0 root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.app/Omnistore
+cd /var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documents 
+iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documents root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.app/Omnistore
 ```
 ##### 第一次执行可能如下错误：
 ```
@@ -120,4 +128,5 @@ class-dump 3.5 (64 bit) (Debug version compiled Sep 17 2017 16:24:48)
 ```
 
 ### /Users/admin/Mygit/dump_header 导出的头文件路径。
+
 
