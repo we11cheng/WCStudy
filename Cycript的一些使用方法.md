@@ -39,6 +39,12 @@ ps ax或者ps -e
 
 ![](https://github.com/we11cheng/WCImageHost/raw/master/WX20180705-170832.png)
 
+- 指定PID(附加进程),找到对应项目的PID
+
+```
+cycript -p 19617
+```
+
 - 当控制台出现
 
 ```
