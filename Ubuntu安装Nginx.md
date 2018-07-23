@@ -176,5 +176,30 @@ root /var/www/html
 listen 8001;
 server_name www.ipersistence.top;
 ```
+### 配置ssl允许http https同时访问的方法
+#### 假设我们的conf配置如下。
+
+```
+server {
+    server_name YOUR_DOMAINNAME_HERE;
+    listen 443;
+    ssl on;
+    ssl_certificate /usr/local/nginx/conf/server.crt;
+    ssl_certificate_key /usr/local/nginx/conf/server.key;
+}
+```
+编辑之后：
+
+```
+server {
+    server_name YOUR_DOMAINNAME_HERE;
+    listen 443 ssl;
+    ssl_certificate /usr/local/nginx/conf/server.crt;
+    ssl_certificate_key /usr/local/nginx/conf/server.key;
+}
+```
+### 把ssl on;这行去掉，ssl写在443端口后面。这样http和https的都可以访问，完美解决nginx配置ssl允许http https同时访问的问题。
 ### 欢迎访问 <http://ipersistence.top:8001/>
+### 欢迎访问 <https://ipersistence.top/>
 ### 参考链接 <http://blog.takwolf.com/2016/10/19/setup-nginx-on-ubuntu/index.html>
+
