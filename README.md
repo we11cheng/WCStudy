@@ -37,4 +37,4 @@
 - ```2018-7-19```[ShadowsocksR&Shadowsocks安装及多用户管理](https://github.com/we11cheng/WCStudy/blob/master/ShadowsocksR%26Shadowsocks%E5%AE%89%E8%A3%85%E5%8F%8A%E5%A4%9A%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.md)
 - ```2018-7-20```[Ubuntu添加User用户](https://github.com/we11cheng/WCStudy/blob/master/Ubuntu%E6%B7%BB%E5%8A%A0User%E7%94%A8%E6%88%B7.md)
 - ```2018-7-20```[阿里云Ubuntu 16.04安装Redis](https://github.com/we11cheng/WCStudy/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91Ubuntu%2016.04%E5%AE%89%E8%A3%85Redis.md)
-- ```2018-7-23```[Clutch砸壳(菜鸡版)]
+- ```2018-7-23```[Clutch砸壳(菜鸡版)](https://github.com/we11cheng/WCStudy/blob/master/Clutch%E7%A0%B8%E5%A3%B3(%E8%8F%9C%E9%B8%A1%E7%89%88).md)
