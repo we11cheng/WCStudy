@@ -51,11 +51,39 @@ dumpdecrypted.dylib: signed Mach-O universal (armv7 armv7s arm64) [dumpdecrypted
    ##### 这一步可以使用scp命令或者使用[iFunbox](http://www.i-funbox.com/zh-cn_index.html)配合Apple File Conduit "2"插件，很方便的传输文件。
    
  ![](https://github.com/we11cheng/WCImageHost/raw/master/131532338495_.pic.png)
+ 
+- 如何正确找到目标app沙盒路径，演示如下
+
+```
+ps -e
+```
+正确返回示例
+
+```
+25134 ??         0:00.34 /Developer/usr/bin/debugserver --lockdown --launch=frontboard
+25143 ??         0:00.56 /var/containers/Bundle/Application/B89AADEA-FDBF-4BEA-B2FE-D52A3D93CEDC/WCCycriptTest.app/WCCycriptTe
+25148 ??         0:00.19 sshd: root@ttys001 
+25158 ??         0:01.74 /var/containers/Bundle/Application/1C49DCA8-34E3-4F65-A1E4-CDD87B9CDF3C/Omnistore.app/Omnistore
+25149 ttys001    0:00.03 -sh
+25160 ttys001    0:00.01 ps -e
+iPersistence:~ root# cycript -p 25158
+cy# NSHomeDirectory()
+@"/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47"
+cy# 
+iPersistence:~ root# ps -e | grep Omnistore
+25158 ??         0:02.65 /var/containers/Bundle/Application/1C49DCA8-34E3-4F65-A1E4-CDD87B9CDF3C/Omnistore.app/Omnistore
+25177 ttys001    0:00.00 grep Omnistore
+iPersistence:~ root# cycript -p 25158
+cy# [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask][0]
+#"file:///var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/"
+cy# 
+```
+#### 我们关心的是```/var/containers/Bundle/Application/1C49DCA8-34E3-4F65-A1E4-CDD87B9CDF3C/Omnistore.app/Omnistore```和```/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/```这两个路径。一个是app可执行路径，一个是沙盒路径。
 
 - scp方式传输方式如下(iFunbox和scp二选一)：
 
 ```
-scp /Users/admin/SourceCode/dumpdecrypted/dumpdecrypted.dylib root@192.168.2.200:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documents
+scp /Users/admin/SourceCode/dumpdecrypted/dumpdecrypted.dylib root@192.168.2.200:/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/
 root@192.168.2.200's password: 
 dumpdecrypted.dylib                                                                   100%  203KB   1.9MB/s   00:00    
 ```
@@ -63,14 +91,14 @@ dumpdecrypted.dylib                                                             
 - dumpdecrypted.dylib添加成功后，切换到iphone ssh，切换到app沙盒文件路径下执行DYLD_INSERT_LIBRARIES命令，如下: 
 
 ```
-cd /var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documents 
-iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documents root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Omnistore.app/Omnistore
+cd /var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/
+iPhone:/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/ root# DYLD_INSERT_LIBRARIES=dumpdecrypted.dylib /var/containers/Bundle/Application/1C49DCA8-34E3-4F65-A1E4-CDD87B9CDF3C/Omnistore.app/Omnistore
 ```
 ##### 第一次执行可能如下错误：
 ```
 dyld: could not load inserted library 'dumpdecrypted.dylib' because no suitable image found.  Did find:
 dumpdecrypted.dylib: required code signature missing for 'dumpdecrypted.dylib'
-/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib: required code signature missing for '/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib'
+/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documentsdumpdecrypted.dylib: required code signature missing for '/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documentsdumpdecrypted.dylib'
 Abort trap: 6
 ```
 ##### 错误提示也很明确。需要对dumpdecrypted.dylib签名。见配置dumpdecrypted需要注意的地方。
@@ -126,7 +154,5 @@ admindeMBP-4:dumpdecrypted admin$ class-dump -S -s -H /Users/admin/Desktop/decry
 class-dump: invalid option -- 0
 class-dump 3.5 (64 bit) (Debug version compiled Sep 17 2017 16:24:48)
 ```
-
 ### /Users/admin/Mygit/dump_header 导出的头文件路径。
-
 
