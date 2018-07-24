@@ -1,7 +1,7 @@
 # dumpdecrypted 导出头文件
 
 ### class-dump可以将Mach-O文件中的Objective-C运行时的声明信息导出，即编写OC代码时的.h文件。class-dump只能导出未加密的app头文件，因此我们想要分析头文件就要先对app进行dumpdecrypted（砸壳）操作。
-
+### 砸壳移步<https://github.com/we11cheng/WCStudy/blob/master/frida-ios-dump.md>
 ### 配置dumpdecrypted
 - 下载dumpdecrypted最新源码。cd 到自己的工作目录 eg:
 
