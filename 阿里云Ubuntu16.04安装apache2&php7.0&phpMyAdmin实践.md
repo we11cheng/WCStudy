@@ -13,7 +13,15 @@ sudo apt-get install apache2
 sudo apt-get install php7.0
 ```
 
-##### 安装完成之后可以通过php -v测试环境是否配置正确，或者通过```sudo vim /var/www/html/testphp.php```命令创建testphp.php文件,浏览器输入http://localhost/testphp.php进行访问，如果访问正常，则表示php安装成功。
+##### 安装完成之后可以通过php -v测试环境是否配置正确，或者通过```sudo vim /var/www/html/testphp.php```命令创建testphp.php文件,浏览器输入```http://localhost/testphp.php```进行访问，如果访问正常，则表示php安装成功。
+##### testphp.php内容如下
+
+```
+<?php echo phpinfo();?>
+```
+##### 如果出现下图所示表示php已经正常解析了。一般情况下是不生效的。因为nginx部分还没有配置...
+
+![](https://github.com/we11cheng/WCImageHost/raw/master/WX20180724-155332%402x.png)
 
 - 安装mysql，参见之前的文章<https://github.com/we11cheng/WCStudy/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ubuntu%2016.04%E5%AE%89%E8%A3%85mysql.md>
 
@@ -26,8 +34,7 @@ sudo apt-get update
 sudo apt-get install phpmyadmin php-mbstring php-gettext
 ```
 ##### server 选择apache2，dbconfig-common选择yes
-
-#### 注意的问题。我们一般是用nginx服务器。phpmyadmin安装完以后，默认是在```/usr/share/phpmyadmin```，我们需要通过一个软链接把这个目录放到nginx目录下，命令如下
+##### 注意的问题。我们一般是用nginx服务器。phpmyadmin安装完以后，默认是在```/usr/share/phpmyadmin```，我们需要通过一个软链接把这个目录放到nginx目录下，命令如下
 
 ```
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
@@ -46,7 +53,7 @@ sudo phpenmod mbstring
 sudo systemctl restart apache2
 ```
 
-- php相关配置
+- 安装php-fpm php-mysql
 
 ```
 sudo apt-get install php-fpm php-mysql
@@ -87,7 +94,7 @@ server {
     }
 }
 ```
-修改为
+修改后
 
 ```
 server {
