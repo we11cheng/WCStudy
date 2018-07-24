@@ -78,7 +78,7 @@ cy# [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomai
 #"file:///var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/"
 cy# 
 ```
-#### 我们关心的是```/var/containers/Bundle/Application/1C49DCA8-34E3-4F65-A1E4-CDD87B9CDF3C/Omnistore.app/Omnistore```和```/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/```这两个路径。一个是app可执行路径，一个是沙盒路径。
+#### 我们关心的是<font color=red size=4 face="黑体">```/var/containers/Bundle/Application/1C49DCA8-34E3-4F65-A1E4-CDD87B9CDF3C/Omnistore.app/Omnistore```</font>和<font color=red size=4 face="黑体">```/var/mobile/Containers/Data/Application/B08BB58A-4C61-410A-B835-1D9D01BF5C47/Documents/```</font>这两个路径。一个是app可执行路径，一个是沙盒路径。
 
 - scp方式传输方式如下(iFunbox和scp二选一)：
 
@@ -155,4 +155,5 @@ class-dump: invalid option -- 0
 class-dump 3.5 (64 bit) (Debug version compiled Sep 17 2017 16:24:48)
 ```
 ### /Users/admin/Mygit/dump_header 导出的头文件路径。
+
 
