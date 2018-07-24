@@ -13,7 +13,7 @@ sudo apt-get install apache2
 sudo apt-get install php7.0
 ```
 
-##### 安装完成之后可以通过php -v测试环境是否配置正确，或者通过sudo vim /var/www/html/testphp.php命令创建testphp.php文件,浏览器输入http://localhost/testphp.php进行访问，如果访问正常，则表示php安装成功。
+##### 安装完成之后可以通过php -v测试环境是否配置正确，或者通过```sudo vim /var/www/html/testphp.php```命令创建testphp.php文件,浏览器输入http://localhost/testphp.php进行访问，如果访问正常，则表示php安装成功。
 
 - 安装mysql，参见之前的文章<https://github.com/we11cheng/WCStudy/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ubuntu%2016.04%E5%AE%89%E8%A3%85mysql.md>
 
@@ -38,7 +38,7 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 ```
 sudo phpenmod mcrypt
 sudo phpenmod mbstring
-``
+```
 
 - 重启apache2 让配置生效
 
@@ -51,21 +51,25 @@ sudo systemctl restart apache2
 ```
 sudo apt-get install php-fpm php-mysql
 ```
+
 配置文件php-fpm root权限
 
 ```
 sudo vim /etc/php/7.0/fpm/php.ini
 ```
+
 修改```gi.fix_pathinfo```
 
 ```
 cgi.fix_pathinfo=0
 ```
+
 更改```/etc/nginx/sites-available/default```
 
 ```
 sudo vim /etc/nginx/sites-available/default
 ```
+
 更改之前
 
 ```
