@@ -203,5 +203,10 @@ https://domain_name_or_IP/phpmyadmin
 ### 参考链接<https://segmentfault.com/a/1190000005786808>
 ### 参考链接<https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-16-04>
 ### 参考链接<https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-in-ubuntu-16-04>
+### 2018-7-25 Ubuntu-ubuntu16.0.4phpmyadmin使用配置文件中定义的控制用户连接失败错误
+##### 解决方法
+1. 这个时候我们需要修改phpMyAdmin中的config.inc.php文件，这个文件的具体位置在/etc/phpmyadmin/config.inc.php； 
+2. 找到它之中的$cfg['Servers'][$i]['controluser']与$cfg['Servers'][$i]['controlpass']两个选项分别修改为你的MySql的用户名和密码； 
+3. 你可以直接修改也可以去修改它引用的变量$dbuser和$dbpass所在的配置文件，这两个变量所在的文件是当前目录下的config-db.php。 最后重启phpMyAdmin就可以了。
 
 
