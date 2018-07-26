@@ -70,7 +70,7 @@ iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/D
 ```
 dyld: could not load inserted library 'dumpdecrypted.dylib' because no suitable image found.  Did find:
 dumpdecrypted.dylib: required code signature missing for 'dumpdecrypted.dylib'
-/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib: required code signature missing for '/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/dumpdecrypted.dylib'
+/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documentsdumpdecrypted.dylib: required code signature missing for '/private/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0/Documentsdumpdecrypted.dylib'
 Abort trap: 6
 ```
 ##### 错误提示也很明确。需要对dumpdecrypted.dylib签名。见配置dumpdecrypted需要注意的地方。
@@ -93,7 +93,7 @@ Abort trap: 6
 [+] Closing original file
 [+] Closing dump file
 ```
-- 查看文件.decrypted。
+- 查看.decrypted文件。
 
 ```
 iPhone:/var/containers/Bundle/Application/15BE94E8-4E3F-4FFE-8E89-F3BFEFF66AE0 root# ls
@@ -106,7 +106,7 @@ admindeMBP-4:dumpdecrypted admin$ scp root@192.168.2.200:/var/containers/Bundle/
 root@192.168.2.200's password: 
 Omnistore.decrypted         
 ```
-- otool 检测是否加壳 
+- otool 检测是否解密
 
 ```
 admindeMBP-4:decrypted admin$ otool -l Omnistore.decrypted | grep -B 2 crypt
@@ -129,4 +129,35 @@ class-dump 3.5 (64 bit) (Debug version compiled Sep 17 2017 16:24:48)
 
 ### /Users/admin/Mygit/dump_header 导出的头文件路径。
 
+### 进一步完善dumpdecrypted，支持Dumps decrypted mach-o files from encrypted applications、framework or app extensions.
+### 步骤如下
+- 克隆项目
 
+```
+gwcdeMacBook-Pro:SourceCode gwc$ git clone https://github.com/AloneMonkey/dumpdecrypted.git
+Cloning into 'dumpdecrypted'...
+remote: Counting objects: 73, done.
+remote: Total 73 (delta 0), reused 0 (delta 0), pack-reused 73
+Unpacking objects: 100% (73/73), done.
+```
+- Xcode运行项目，进行参数配置
+
+<img width="1280" alt="wx20180726-210143 2x" src="https://user-images.githubusercontent.com/13333981/43264057-9a9fd4e0-9117-11e8-830b-c9730ba8d97e.png">
+
+<img width="1280" alt="wx20180726-210654 2x" src="https://user-images.githubusercontent.com/13333981/43264172-f2926b5e-9117-11e8-95b6-10d4a6f54aef.png">
+
+- 确保电脑安装了sshpass。推荐使用berw安装，命令如下
+
+```
+brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+```
+
+- xcode运行选择真机运行
+
+- comand+b 。成功大概如下图所示
+
+<img width="1280" alt="wx20180726-211436 2x" src="https://user-images.githubusercontent.com/13333981/43264525-ff2b2e90-9118-11e8-8677-7d5a9b605a7b.png">
+
+- 砸完生成的.decrypted文件默认也是在目标app沙盒ducuments目录下。而且framework、extensions 也是解密的。检测是否解密使用otool工具。
+
+### 参考链接 <https://github.com/AloneMonkey/dumpdecrypted>
