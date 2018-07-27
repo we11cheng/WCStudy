@@ -4,7 +4,7 @@
 
 - 2.0.4版本，我存了一份，百度云盘地址链接: <https://pan.baidu.com/s/1OUvaiSKlV2YawG5UG9xxHw> 密码: 2k1c。需要可以自取或者去github下载，上面也给出了下载地址。
 
-- 把下载的Clutch放到越狱的手机的/usr/bin目录下，scp命令。
+- 把下载的Clutch放到越狱的手机的/usr/bin目录下，scp命令或者使用ifunbox传输。
 
 ```
 admindeMBP-4:~ admin$ scp /Users/admin/Downloads/Clutch-2.0.4 root@192.168.2.116:/usr/bin
@@ -17,7 +17,7 @@ admindeMBP-4:~ admin$ scp /Users/admin/Downloads/Clutch-2.0.4 root@192.168.2.116
 cd /usr/bin
 ```
 
-- 赋予权限
+- 赋予权限 +x 可执行权限
 
 ```
 chmod +x Clutch-2.0.4 
@@ -29,7 +29,7 @@ chmod +x Clutch-2.0.4
 Clutch-2.0.4
 ```
 
-### 正确返回示例
+### Clutch-2.0.4使用说明
 ```
 iPersistence:~ root# Clutch-2.0.4
 Usage: Clutch-2.0.4 [OPTIONS]
@@ -40,7 +40,15 @@ Usage: Clutch-2.0.4 [OPTIONS]
    --version             Display version and exit 
 -? --help                Display this help and exit 
 -n --no-color            Print with colors disabled 
+```
 
+##### -b 砸特定bundleID二进制文件 
+#### -d 生成解密ipa 
+#### -i 打印安装的应用
+
+### 查看app主进程及extension/widget进程，正确返回示例
+
+```
 iPersistence:~ root# ps -e |grep var
 18565 ??         1:48.30 /private/var/containers/Bundle/Application/D88DAA97-33FA-4D27-A172-A320897050E3/SogouInput.app/PlugIns/com.sogou.sogouinput.BaseKeyboard.appex/com.sogou.sogouinput.BaseKeyboard
 18568 ??         0:00.57 /var/containers/Bundle/Application/13327F8E-DF9D-4267-BA76-8145A94353E0/News.app/News
@@ -74,3 +82,77 @@ iPersistence:~ root# ps -e |grep var
 iPersistence:~ root# 
 ```
 
+### Clutch-2.0.4 -i，正确返回示例
+
+```
+iPersistence:~ root# Clutch-2.0.4 -i
+Installed apps:
+1:   Product Hunt <com.producthunt.producthuntbundleid>
+2:   豆丁书房-4亿文档图书随意看 <com.docin.DocInBookshelfHDHuZhao>
+3:   百词斩-背单词、学英语必备 <com.chaoui.jiongji100CN>
+4:   加密相册管家·您的照片保险箱 <com.mihewo.wangzhezs>
+5:   赤兔-LinkedIn领英旗下职场分享App <com.linkedin.chitu>
+6:   触动力 - 你身边的科技百科 <com.hitnology.hitplayer>
+7:   Xender, File Transfer, Sharing <cn.shanchuan.shanchuan>
+8:   Steward-玩客云管家 <com.Techsen.StewardStore>
+9:   Antidote for Tox <me.dvor.Antidote>
+...
+```
+
+### Clutch-2.0.4 -d，```com.util.box```为目标app的bundleID，执行命令前确保打开了app并且使用了extension、widget，正确返回示例
+
+```
+iPersistence:~ root# Clutch-2.0.4 -d com.util.box
+Zipping BNTPoint.app
+ASLR slide: 0x100060000
+Dumping <PacketTunnelProvider> (arm64)
+Patched cryptid (64bit segment)
+ASLR slide: 0x10001c000
+Dumping <BNTPoint> (arm64)
+Patched cryptid (64bit segment)
+Writing new checksum
+Writing new checksum
+Dumping <lwip> arm64
+Dumping <Sodium> arm64
+Successfully dumped framework lwip!
+Dumping <Resolver> arm64
+Dumping <Yaml> arm64
+Dumping <MMDB> arm64
+Dumping <CocoaLumberjack> arm64
+Dumping <CocoaAsyncSocket> arm64
+Successfully dumped framework Resolver!
+Successfully dumped framework MMDB!
+Dumping <tun2socks> arm64
+Dumping <CocoaLumberjackSwift> arm64
+Successfully dumped framework Sodium!
+Successfully dumped framework CocoaLumberjackSwift!
+Successfully dumped framework CocoaLumberjack!
+Successfully dumped framework Yaml!
+Successfully dumped framework tun2socks!
+Child exited with status 0
+Child exited with status 0
+Successfully dumped framework CocoaAsyncSocket!
+Child exited with status 0
+Child exited with status 0
+Child exited with status 0
+Child exited with status 0
+Child exited with status 0
+Child exited with status 0
+Child exited with status 0
+Dumping <NEKit> arm64
+Successfully dumped framework NEKit!
+Zipping CocoaAsyncSocket.framework
+Zipping CocoaLumberjack.framework
+Zipping CocoaLumberjackSwift.framework
+Zipping MMDB.framework
+Child exited with status 0
+Zipping NEKit.framework
+Zipping Resolver.framework
+Zipping Sodium.framework
+Zipping Yaml.framework
+Zipping lwip.framework
+Zipping tun2socks.framework
+Zipping PacketTunnelProvider.appex
+DONE: /private/var/mobile/Documents/Dumped/com.util.box-iOS9.3-(Clutch-2.0.4)-2.ipa
+Finished dumping com.util.box in 8.6 seconds
+```

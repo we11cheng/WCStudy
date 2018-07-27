@@ -129,7 +129,7 @@ class-dump 3.5 (64 bit) (Debug version compiled Sep 17 2017 16:24:48)
 
 ### /Users/admin/Mygit/dump_header 导出的头文件路径。
 
-### 进一步完善dumpdecrypted，支持Dumps decrypted mach-o files from encrypted applications、framework or app extensions.
+### 2017-7-26进一步完善dumpdecrypted，支持Dumps decrypted mach-o files from encrypted applications、framework or app extensions.
 ### 步骤如下
 - 克隆项目
 
