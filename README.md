@@ -41,5 +41,6 @@
 - ```2018-7-24```[阿里云Ubuntu16.04安装apache2&php7.0&phpMyAdmin实践](https://github.com/we11cheng/WCStudy/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91Ubuntu16.04%E5%AE%89%E8%A3%85apache2%26php7.0%26phpMyAdmin%E5%AE%9E%E8%B7%B5.md)
 - ```2018-7-30```[git问答](https://github.com/we11cheng/WCStudy/blob/master/git%E9%97%AE%E7%AD%94(%E4%B8%8D%E5%AE%9A%E6%97%B6%E6%9B%B4%E6%96%B0).md)
 - ```2018-7-31```[开源图床搭建](https://github.com/we11cheng/WCStudy/blob/master/%E5%BC%80%E6%BA%90%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA.md)
+- ```2-18-7-31```[VC多层push后回到指定页面的方法]()
 
 
