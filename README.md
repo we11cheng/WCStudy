@@ -41,6 +41,11 @@
 - ```2018-7-24```[阿里云Ubuntu16.04安装apache2&php7.0&phpMyAdmin实践](https://github.com/we11cheng/WCStudy/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91Ubuntu16.04%E5%AE%89%E8%A3%85apache2%26php7.0%26phpMyAdmin%E5%AE%9E%E8%B7%B5.md)
 - ```2018-7-30```[git问答](https://github.com/we11cheng/WCStudy/blob/master/git%E9%97%AE%E7%AD%94(%E4%B8%8D%E5%AE%9A%E6%97%B6%E6%9B%B4%E6%96%B0).md)
 - ```2018-7-31```[开源图床搭建](https://github.com/we11cheng/WCStudy/blob/master/%E5%BC%80%E6%BA%90%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA.md)
-- ```2-18-7-31```[VC多层push后回到指定页面的方法](https://github.com/we11cheng/WCStudy/blob/master/VC%E5%A4%9A%E5%B1%82push%E5%90%8E%E5%9B%9E%E5%88%B0%E6%8C%87%E5%AE%9A%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%96%B9%E6%B3%95.md)
+- ```2018-7-31```[VC多层push后回到指定页面的方法](https://github.com/we11cheng/WCStudy/blob/master/VC%E5%A4%9A%E5%B1%82push%E5%90%8E%E5%9B%9E%E5%88%B0%E6%8C%87%E5%AE%9A%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%96%B9%E6%B3%95.md)
+- ```2018-8-6```[fork同步](https://github.com/we11cheng/WCStudy/blob/master/fork%E5%90%8C%E6%AD%A5.md)
+- ```2018-8-6```[kvo机制](https://github.com/we11cheng/WCStudy/blob/master/KVO%E6%9C%BA%E5%88%B6.md)
+- ```2018-8-6```[UIViewController生命周期](https://github.com/we11cheng/WCStudy/blob/master/UIViewController%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
+- ```2018-8-6```[冒泡排序](https://github.com/we11cheng/WCStudy/blob/master/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.md)
+- ```2018-8-6```[查找两个子视图的共同父视图](https://github.com/we11cheng/WCStudy/blob/master/%E6%9F%A5%E6%89%BE%E4%B8%A4%E4%B8%AA%E5%AD%90%E8%A7%86%E5%9B%BE%E7%9A%84%E5%85%B1%E5%90%8C%E7%88%B6%E8%A7%86%E5%9B%BE.md)
 
 
