@@ -49,5 +49,6 @@
 - ```2018-8-6```[查找两个子视图的共同父视图](https://github.com/we11cheng/WCStudy/blob/master/%E6%9F%A5%E6%89%BE%E4%B8%A4%E4%B8%AA%E5%AD%90%E8%A7%86%E5%9B%BE%E7%9A%84%E5%85%B1%E5%90%8C%E7%88%B6%E8%A7%86%E5%9B%BE.md)
 - ```2018-8-14```[删除Docker镜像](https://github.com/we11cheng/WCStudy/blob/master/%E5%88%A0%E9%99%A4Docker%E9%95%9C%E5%83%8F.md)
 - ```2018-8-15```[剖析objc_msgSend](https://github.com/we11cheng/WCStudy/blob/master/%E5%89%96%E6%9E%90objc_msgSend.md)
+- ```2018-8-15```[iOS事件产生、传递和响应链](https://github.com/we11cheng/WCStudy/blob/master/iOS%E4%BA%8B%E4%BB%B6%E4%BA%A7%E7%94%9F%E4%BC%A0%E9%80%92%E5%92%8C%E5%93%8D%E5%BA%94%E9%93%BE.md)
 
 
