@@ -54,6 +54,20 @@ cy#
 
 #### 部分使用方法
 
+获取bundele id
+
+```
+cy# [[NSBundle mainBundle]bundleIdentifier]
+@"com.obizsoft.WCCycriptTest"
+```
+获取Documents路径
+
+```
+cy# NSHomeDirectory()
+@"/var/mobile/Containers/Data/Application/71A4B323-D70E-45A7-87FC-7D6E1E604230"
+```
+##### document路径为```/var/mobile/Containers/Data/Application/71A4B323-D70E-45A7-87FC-7D6E1E604230/Documents```
+
 ```
 UIApp.keyWindow.recursiveDescription().toString()
 ```
