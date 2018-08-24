@@ -43,9 +43,9 @@ dumpdecrypted.dylib: signed Mach-O universal (armv7 armv7s arm64) [dumpdecrypted
 ```
 - 使用ssh登录越狱设备 [SSH连接越狱iPhone](https://www.jianshu.com/p/bf69cefc5f39)
 
-- 连接成功后输入```ps -e``` 找到含bundle的路径，只会存在一个(也就是目标app)，这一步很重要。
+- 连接成功后输入```ps -e``` 找到含bundle的路径，命令显示进程的可执行文件路径，这一步很重要。
 
-- 拷贝拷贝dumpdecrypted.dylib到目标app沙盒Documents目录下。
+- 拷贝拷贝dumpdecrypted.dylib到目标app沙盒Documents目录下。获取Documents目录查看<https://github.com/we11cheng/WCStudy/blob/master/Cycript%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.md>这里有提到（利用Cycript技术）。
  
 - 我们要把电脑上生成的dumpdecrypted.dylib放在砸壳app的沙盒路径下。
    ##### 这一步可以使用scp命令或者使用[iFunbox](http://www.i-funbox.com/zh-cn_index.html)配合Apple File Conduit "2"插件，很方便的传输文件。
