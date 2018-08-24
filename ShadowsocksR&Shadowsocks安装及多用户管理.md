@@ -77,3 +77,33 @@ ShadowsocksR 默认支持UDP转发，服务端无需任何设置。
 ```
 ### 查看内核列表<https://www.91yun.co/wp-content/plugins/91yun-serverspeeder/systemlist.html>
 ### 本文参考链接<https://github.com/ToyoDAdoubi/doubi>
+### 2018-8-24更新 另外一个脚本工具SSR-Bash
+#### ShadowsocksR多用户管理脚本（基于官方mujson版本）
+一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。
+
+系统支持
+
+- Ubuntu 14
+- Ubuntu 16
+- Debian 7
+- Debian 8
+- CentOS 6
+- CentOS 7
+
+安装
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/mucut/SSR-Bash-Python/master/install.sh && bash install.sh
+```
+
+卸载
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/mucut/SSR-Bash-Python/master/uninstall.sh && bash uninstall.sh
+```
+
+自检
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/mucut/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
+```
