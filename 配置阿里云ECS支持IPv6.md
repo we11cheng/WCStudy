@@ -61,7 +61,7 @@ ifup: interface he-ipv6 already configured
 ```
 server {
     listen 80 default_server;
-    listen [::]:80 default_server ipv6only=on;
+    listen [::]:80 default_server;
  
     root /var/www/api/public;
     index index.php index.html index.htm;
