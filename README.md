@@ -55,5 +55,6 @@
 - ```2018-8-24```[部署Seafile服务器实测](https://github.com/we11cheng/WCStudy/blob/master/%E9%83%A8%E7%BD%B2Seafile%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E6%B5%8B.md)
 - ```2018-8-24```[制作自己ss/ssr订阅地址](https://github.com/we11cheng/WCStudy/blob/master/%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1ss:ssr%E8%AE%A2%E9%98%85%E5%9C%B0%E5%9D%80.md)
 - ```2018-8-27```[配置阿里云ECS支持IPv6](https://github.com/we11cheng/WCStudy/blob/master/%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91ECS%E6%94%AF%E6%8C%81IPv6.md)
+- ```2018-8-27```[修改服务器ssh登录密码](https://github.com/we11cheng/WCStudy/blob/master/%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E5%99%A8ssh%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81.md)
 
 
