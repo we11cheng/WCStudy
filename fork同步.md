@@ -8,14 +8,14 @@
 ###### 2：clone到本地
 
 ```objc
-git clone git@github.com:username/repositoryname.git
+git clone git@github.com:username/repositoryname.git //clone自己fork的repo地址
 ```
 
 
 ###### 3：添加源仓库路径
 
 ```objc
-git remote add upstream https://github.com/owername/pouch.git
+git remote add upstream https://github.com/owername/pouch.git //add原作者reop地址
 ```
 
 ###### 4：源仓库路径设置
