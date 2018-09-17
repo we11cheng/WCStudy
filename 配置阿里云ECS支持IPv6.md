@@ -38,7 +38,7 @@ local 172.16.174.227
 endpoint any
 ttl 255
 gateway 2001:470:23:8e7::1
-up ip -6 route add 2000::/3 via ::<HE Server IPv4> dev he-ipv6
+up ip -6 route add 2000::/3 via ::74.82.46.6 dev he-ipv6
 up ip -6 addr add 2001:470:23:8e7::1:1/128 dev he-ipv6
 up ip -6 addr add 2001:470:23:8e7::2:1/128 dev he-ipv6
 down ip -6 route flush dev he-ipv6
