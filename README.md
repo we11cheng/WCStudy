@@ -57,4 +57,5 @@
 - ```2018-8-27```[配置阿里云ECS支持IPv6](https://github.com/we11cheng/WCStudy/blob/master/%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91ECS%E6%94%AF%E6%8C%81IPv6.md)
 - ```2018-8-27```[修改服务器ssh登录密码](https://github.com/we11cheng/WCStudy/blob/master/%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E5%99%A8ssh%E7%99%BB%E5%BD%95%E5%AF%86%E7%A0%81.md)
 - ```2018-9-7```[Category真面目](https://github.com/we11cheng/WCStudy/blob/master/Category%E7%9C%9F%E9%9D%A2%E7%9B%AE.md)
+- ```2018-9-17```[iOS图片裁剪遇到的坑](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.md)
 
