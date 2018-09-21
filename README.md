@@ -59,4 +59,6 @@
 - ```2018-9-7```[Category真面目](https://github.com/we11cheng/WCStudy/blob/master/Category%E7%9C%9F%E9%9D%A2%E7%9B%AE.md)
 - ```2018-9-17```[iOS图片裁剪遇到的坑](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.md)
 - ```2018-9-18```[常用的pip命令](https://github.com/we11cheng/WCStudy/blob/master/%E5%B8%B8%E7%94%A8%E7%9A%84pip%E5%91%BD%E4%BB%A4.md)
-
+- ```2018-9-21```[合理销毁一个AVplayer播放器](https://github.com/we11cheng/WCStudy/blob/master/%E5%90%88%E7%90%86%E9%94%80%E6%AF%81%E4%B8%80%E4%B8%AAAVplayer%E6%92%AD%E6%94%BE%E5%99%A8.md)
+- ```2018-9-21```[如何查看电脑连接过的 Wi-Fi 密码](https://github.com/we11cheng/WCStudy/blob/master/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E7%94%B5%E8%84%91%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%9A%84%20Wi-Fi%20%E5%AF%86%E7%A0%81.md)
+- ```2018-9-21```[pipenv安装与简单使用](https://github.com/we11cheng/WCStudy/blob/master/pipenv%E5%AE%89%E8%A3%85%E4%B8%8E%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.md)
