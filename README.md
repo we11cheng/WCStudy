@@ -62,3 +62,4 @@
 - ```2018-9-21```[合理销毁一个AVplayer播放器](https://github.com/we11cheng/WCStudy/blob/master/%E5%90%88%E7%90%86%E9%94%80%E6%AF%81%E4%B8%80%E4%B8%AAAVplayer%E6%92%AD%E6%94%BE%E5%99%A8.md)
 - ```2018-9-21```[如何查看电脑连接过的 Wi-Fi 密码](https://github.com/we11cheng/WCStudy/blob/master/%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E7%94%B5%E8%84%91%E8%BF%9E%E6%8E%A5%E8%BF%87%E7%9A%84%20Wi-Fi%20%E5%AF%86%E7%A0%81.md)
 - ```2018-9-21```[pipenv安装与简单使用](https://github.com/we11cheng/WCStudy/blob/master/pipenv%E5%AE%89%E8%A3%85%E4%B8%8E%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.md)
+- ```2018-9-30```[远程登录和复制文件](https://github.com/we11cheng/WCStudy/blob/master/%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E5%92%8C%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6.md)
