@@ -64,3 +64,4 @@
 - ```2018-9-21```[pipenv安装与简单使用](https://github.com/we11cheng/WCStudy/blob/master/pipenv%E5%AE%89%E8%A3%85%E4%B8%8E%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8.md)
 - ```2018-9-30```[远程登录和复制文件](https://github.com/we11cheng/WCStudy/blob/master/%E8%BF%9C%E7%A8%8B%E7%99%BB%E5%BD%95%E5%92%8C%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6.md)
 - ```2019-1-10```[Mac备份iPhone照片到可移动磁盘](https://github.com/we11cheng/WCStudy/blob/master/Mac%E5%A4%87%E4%BB%BDiPhone%E7%85%A7%E7%89%87%E5%88%B0%E5%8F%AF%E7%A7%BB%E5%8A%A8%E7%A3%81%E7%9B%98.md)
+- ```2019-1-10```[iTunes将你的iOS设备备份到外置磁盘](https://github.com/we11cheng/WCStudy/blob/master/iTunes%E5%B0%86%E4%BD%A0%E7%9A%84iOS%E8%AE%BE%E5%A4%87%E5%A4%87%E4%BB%BD%E5%88%B0%E5%A4%96%E7%BD%AE%E7%A3%81%E7%9B%98.md)
