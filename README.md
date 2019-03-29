@@ -66,3 +66,6 @@
 - ```2019-1-10```[Mac备份iPhone照片到可移动磁盘](https://github.com/we11cheng/WCStudy/blob/master/Mac%E5%A4%87%E4%BB%BDiPhone%E7%85%A7%E7%89%87%E5%88%B0%E5%8F%AF%E7%A7%BB%E5%8A%A8%E7%A3%81%E7%9B%98.md)
 - ```2019-1-10```[iTunes将你的iOS设备备份到外置磁盘](https://github.com/we11cheng/WCStudy/blob/master/iTunes%E5%B0%86%E4%BD%A0%E7%9A%84iOS%E8%AE%BE%E5%A4%87%E5%A4%87%E4%BB%BD%E5%88%B0%E5%A4%96%E7%BD%AE%E7%A3%81%E7%9B%98.md)
 - ```2019-3-24```[iOS麦克风权限](https://github.com/we11cheng/WCStudy/blob/master/iOS%E9%BA%A6%E5%85%8B%E9%A3%8E%E6%9D%83%E9%99%90.md)
+- ```2019-3-29```[iOS位置权限](https://github.com/we11cheng/WCStudy/blob/master/iOS%E4%BD%8D%E7%BD%AE%E6%9D%83%E9%99%90.md)
+- ```2019-3-29```[获取手机GPS信息](https://github.com/we11cheng/WCStudy/blob/master/%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BAGPS%E4%BF%A1%E6%81%AF.md)
+- ```2019-3-29```[一次性十六进制颜色转换问题](https://github.com/we11cheng/WCStudy/blob/master/%E4%B8%80%E6%AC%A1%E6%80%A7%E8%A7%A3%E5%86%B3%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E9%A2%9C%E8%89%B2%E9%97%AE%E9%A2%98.md)
