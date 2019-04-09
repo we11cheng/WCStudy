@@ -69,3 +69,4 @@
 - ```2019-3-29```[iOS位置权限](https://github.com/we11cheng/WCStudy/blob/master/iOS%E4%BD%8D%E7%BD%AE%E6%9D%83%E9%99%90.md)
 - ```2019-3-29```[获取手机GPS信息](https://github.com/we11cheng/WCStudy/blob/master/%E8%8E%B7%E5%8F%96%E6%89%8B%E6%9C%BAGPS%E4%BF%A1%E6%81%AF.md)
 - ```2019-3-29```[一次性十六进制颜色转换问题](https://github.com/we11cheng/WCStudy/blob/master/%E4%B8%80%E6%AC%A1%E6%80%A7%E8%A7%A3%E5%86%B3%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E9%A2%9C%E8%89%B2%E9%97%AE%E9%A2%98.md)
+- ```2019-4-9```[解决键盘收起展开事件与MethodSwizzle方法冲突引起的崩溃](https://github.com/we11cheng/WCStudy/blob/master/iOS%20%E9%94%AE%E7%9B%98%E4%B8%8EMethodSwizzle%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98.md)

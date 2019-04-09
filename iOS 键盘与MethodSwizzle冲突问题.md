@@ -4,7 +4,6 @@
 
 ```
 [UIKeyboardLayoutStar release]: message sent to deallocated instance
-
 ```
 
 ### 多方查询，得到解决方案，使用MethodSwizzle修改了NSMutableArray的objectAtIndex:等方法的分类添加非ARC支持，并改写代码实现。
@@ -19,7 +18,6 @@
         }
     }
 }
-
 
 ```
 ### 真实代码，可以看到两处添加了`@autoreleasepool {}`
@@ -47,8 +45,6 @@
         [self exchangeImplementationWithClassStr:@"__NSArrayI" originalMethodStr:tmpStr newMethodStr:tmpThreeStr];
     });
 }
-
-
 
 #pragma mark --- implement method
 
