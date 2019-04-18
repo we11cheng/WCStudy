@@ -14,7 +14,6 @@ export http_proxy=http://127.0.0.1:1087
 
 ```
 curl ip.gs
-
 ```
 
 - 得到结果
