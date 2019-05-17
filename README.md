@@ -73,3 +73,7 @@
 - ```2019-4-18```[ss/ssr快速查看代理IP地址信息](https://github.com/we11cheng/WCStudy/blob/master/ss-ssr%E5%BF%AB%E9%80%9F%E6%9F%A5%E7%9C%8B%E4%BB%A3%E7%90%86IP%E5%9C%B0%E5%9D%80%E4%BF%A1%E6%81%AF.md)
 - ```2019-4-18```[关于GitHub Pages自定义域名](https://github.com/we11cheng/WCStudy/blob/master/%E5%85%B3%E4%BA%8EGitHub%20Pages%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.md)
 - ```2019-4-20```[Git回滚到历史节点(SourceTree篇)](https://github.com/we11cheng/WCStudy/blob/master/Git%E5%9B%9E%E6%BB%9A%E5%88%B0%E5%8E%86%E5%8F%B2%E8%8A%82%E7%82%B9(SourceTree%E7%AF%87).md)
+- ```2019-5-17```[brew升级错误](https://github.com/we11cheng/WCStudy/blob/master/brew%E5%8D%87%E7%BA%A7%E9%94%99%E8%AF%AF.mdhttps://github.com/we11cheng/WCStudy/blob/master/brew%E5%8D%87%E7%BA%A7%E9%94%99%E8%AF%AF.md)
+- ```2019-5-17```[宝塔面板提示数据库管理密码错误](https://github.com/we11cheng/WCStudy/blob/master/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%8F%90%E7%A4%BA%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF.md)
+- ```2019-5-17```[vim使用小记](https://github.com/we11cheng/WCStudy/blob/master/vim%E4%BD%BF%E7%94%A8%E5%B0%8F%E8%AE%B0.md)
+- ```2019-5017```[Flutter问题小记](https://github.com/we11cheng/WCStudy/blob/master/Flutter%E9%97%AE%E9%A2%98%E5%B0%8F%E8%AE%A1.md)
