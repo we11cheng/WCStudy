@@ -1,4 +1,4 @@
-### Flutter问题小计
+### Flutter问题小记
 
 #### Q1: 执行`flutter packages get`时一直提示`Running "flutter packages get" in project_name...`
 #### A1: 很大可能就是packages获取地址被墙了。具体操作
