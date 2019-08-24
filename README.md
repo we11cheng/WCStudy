@@ -79,3 +79,8 @@
 - ```2019-5-17```[Flutter问题小记](https://github.com/we11cheng/WCStudy/blob/master/Flutter%E9%97%AE%E9%A2%98%E5%B0%8F%E8%AE%B0.md)
 - ```2019-6-27```[KVO原理](https://github.com/we11cheng/WCStudy/blob/master/kVO%E5%8E%9F%E7%90%86.md)
 - ```2019-6-27```[git仓库迁移(保留原始commit)](https://github.com/we11cheng/WCStudy/blob/master/git%E4%BB%93%E5%BA%93%E8%BF%81%E7%A7%BB(%E4%BF%9D%E7%95%99%E5%8E%9F%E5%A7%8Bcommit).md)
+- ```2019-8-24```[iOS如何导入和使用第三方字体](https://github.com/we11cheng/WCStudy/blob/master/%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%E5%92%8C%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AD%97%E4%BD%93.md)
+- ```2019-8-24```[AFN DELETE PUT 后台接受不到参数解决办法](https://github.com/we11cheng/WCStudy/blob/master/AFN%20DELETE%20PUT%20%E5%90%8E%E5%8F%B0%E6%8E%A5%E5%8F%97%E4%B8%8D%E5%88%B0%E5%8F%82%E6%95%B0%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.md)
+- ```2019-8-24```[Xcode10 #import 不提示头文件](https://github.com/we11cheng/WCStudy/blob/master/Xcode10%20%23import%20%E4%B8%8D%E6%8F%90%E7%A4%BA%E5%A4%B4%E6%96%87%E4%BB%B6.md)
+- ```2019-8-24```[iOS xib文件中添加ScrollView约束](https://github.com/we11cheng/WCStudy/blob/master/iOS%20xib%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B7%BB%E5%8A%A0ScrollView%E7%BA%A6%E6%9D%9F.md)
+- ```2019-9-24```[iOS实现ScrollView中子控件(Button,自定义View)的触摸事件响应](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%AE%9E%E7%8E%B0ScrollView%E4%B8%AD%E5%AD%90%E6%8E%A7%E4%BB%B6(Button%2C%E8%87%AA%E5%AE%9A%E4%B9%89View)%E7%9A%84%E8%A7%A6%E6%91%B8%E4%BA%8B%E4%BB%B6%E5%93%8D%E5%BA%94.md)
