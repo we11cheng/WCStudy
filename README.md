@@ -84,3 +84,5 @@
 - ```2019-8-24```[Xcode10 #import 不提示头文件](https://github.com/we11cheng/WCStudy/blob/master/Xcode10%20%23import%20%E4%B8%8D%E6%8F%90%E7%A4%BA%E5%A4%B4%E6%96%87%E4%BB%B6.md)
 - ```2019-8-24```[iOS xib文件中添加ScrollView约束](https://github.com/we11cheng/WCStudy/blob/master/iOS%20xib%E6%96%87%E4%BB%B6%E4%B8%AD%E6%B7%BB%E5%8A%A0ScrollView%E7%BA%A6%E6%9D%9F.md)
 - ```2019-9-24```[iOS实现ScrollView中子控件(Button,自定义View)的触摸事件响应](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%AE%9E%E7%8E%B0ScrollView%E4%B8%AD%E5%AD%90%E6%8E%A7%E4%BB%B6(Button%2C%E8%87%AA%E5%AE%9A%E4%B9%89View)%E7%9A%84%E8%A7%A6%E6%91%B8%E4%BA%8B%E4%BB%B6%E5%93%8D%E5%BA%94.md)
+- ```2019-12-24```[QQ分享小记](https://github.com/we11cheng/WCStudy/blob/master/QQ%E5%88%86%E4%BA%AB%E5%B0%8F%E8%AE%B0.md)
+- ```2019-12-24```[Universal Links配置小记](https://github.com/we11cheng/WCStudy/blob/master/Universal%20Links%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%B0.md)
