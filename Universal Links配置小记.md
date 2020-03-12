@@ -64,3 +64,17 @@
     return YES;
 }
 ```
+### 示例apple-app-site-association 文件
+```
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4T57E5CWND.com.rby.SafeManager",
+                "paths": [ "*","/qq_conn/101841750/*"]
+            }
+        ]
+    }
+}
+```
