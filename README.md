@@ -86,3 +86,8 @@
 - ```2019-9-24```[iOS实现ScrollView中子控件(Button,自定义View)的触摸事件响应](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%AE%9E%E7%8E%B0ScrollView%E4%B8%AD%E5%AD%90%E6%8E%A7%E4%BB%B6(Button%2C%E8%87%AA%E5%AE%9A%E4%B9%89View)%E7%9A%84%E8%A7%A6%E6%91%B8%E4%BA%8B%E4%BB%B6%E5%93%8D%E5%BA%94.md)
 - ```2019-12-24```[QQ分享小记](https://github.com/we11cheng/WCStudy/blob/master/QQ%E5%88%86%E4%BA%AB%E5%B0%8F%E8%AE%B0.md)
 - ```2019-12-24```[Universal Links配置小记](https://github.com/we11cheng/WCStudy/blob/master/Universal%20Links%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%B0.md)
+-```2020-2-12```[快速找到Nginx根目录](https://github.com/we11cheng/WCStudy/blob/master/Nginx%E9%A1%B9%E7%9B%AE%E6%A0%B9%E7%9B%AE%E5%BD%95%E9%97%AE%E9%A2%98.md)
+-```2020-2-12```[Git Pull强制覆盖本地文件](https://github.com/we11cheng/WCStudy/blob/master/Git%20Pull%E5%BC%BA%E5%88%B6%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6.md)
+-```2020-2-12```[Github加载不了图片的问题解决办法](https://github.com/we11cheng/WCStudy/blob/master/github%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98.md)
+-```2020-2-12```[Git忽略规则.gitignore不生效](https://github.com/we11cheng/WCStudy/blob/master/Git%E5%BF%BD%E7%95%A5%E8%A7%84%E5%88%99.gitignore%E4%B8%8D%E7%94%9F%E6%95%88.md)
+
