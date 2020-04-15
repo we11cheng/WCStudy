@@ -90,4 +90,7 @@
 - ```2020-2-12```[Git Pull强制覆盖本地文件](https://github.com/we11cheng/WCStudy/blob/master/Git%20Pull%E5%BC%BA%E5%88%B6%E8%A6%86%E7%9B%96%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6.md)
 - ```2020-2-12```[Github加载不了图片的问题解决办法](https://github.com/we11cheng/WCStudy/blob/master/github%E5%9B%BE%E7%89%87%E5%8A%A0%E8%BD%BD%E9%97%AE%E9%A2%98.md)
 - ```2020-2-12```[Git忽略规则.gitignore不生效](https://github.com/we11cheng/WCStudy/blob/master/Git%E5%BF%BD%E7%95%A5%E8%A7%84%E5%88%99.gitignore%E4%B8%8D%E7%94%9F%E6%95%88.md)
-
+- ```2020-4-15```[H3lix 32位 uicache failed fix](https://github.com/we11cheng/WCStudy/blob/master/H3lix%20uicache%20failed%20fix.md)
+- ```20210-4-15```[Cocoapods 如何更新指定的库](https://github.com/we11cheng/WCStudy/blob/master/iOS%20Cocoapods%20%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0%E6%8C%87%E5%AE%9A%E7%9A%84%E5%BA%93.md)
+- ```20210-4-15```[德国iPv6小鸡搭建v2+ws+tls+cdn教程](https://github.com/we11cheng/WCStudy/blob/master/%E5%BE%B7%E5%9B%BDv6%E5%B0%8F%E9%B8%A1%E6%90%AD%E5%BB%BAv2%2Bws%2Btls%2Bcdn%E6%95%99%E7%A8%8B.md)
+- ```20210-4-15```[安装宝塔面板并部署v2ray+ws+tls](https://github.com/we11cheng/WCStudy/blob/master/%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E5%B9%B6%E9%83%A8%E7%BD%B2v2ray%2Bws%2Btls.md)
