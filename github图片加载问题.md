@@ -24,7 +24,44 @@
 151.101.184.133 avatars6.githubusercontent.com
 151.101.184.133 avatars7.githubusercontent.com
 151.101.184.133 avatars8.githubusercontent.com
+
+# GitHub End
 ```
+
+#### 2020-6-9更新
+
+```
+# GitHub Start 
+140.82.113.3      github.com
+140.82.114.20    gist.github.com
+
+151.101.184.133    assets-cdn.github.com
+151.101.184.133    raw.githubusercontent.com
+151.101.184.133    gist.githubusercontent.com
+151.101.184.133    cloud.githubusercontent.com
+151.101.184.133    camo.githubusercontent.com
+151.101.184.133    avatars0.githubusercontent.com
+199.232.68.133     avatars0.githubusercontent.com
+199.232.28.133     avatars1.githubusercontent.com
+151.101.184.133    avatars1.githubusercontent.com
+151.101.184.133    avatars2.githubusercontent.com
+199.232.28.133     avatars2.githubusercontent.com
+151.101.184.133    avatars3.githubusercontent.com
+199.232.68.133     avatars3.githubusercontent.com
+151.101.184.133    avatars4.githubusercontent.com
+199.232.68.133     avatars4.githubusercontent.com
+151.101.184.133    avatars5.githubusercontent.com
+199.232.68.133     avatars5.githubusercontent.com
+151.101.184.133    avatars6.githubusercontent.com
+199.232.68.133     avatars6.githubusercontent.com
+151.101.184.133    avatars7.githubusercontent.com
+199.232.68.133     avatars7.githubusercontent.com
+151.101.184.133    avatars8.githubusercontent.com
+199.232.68.133     avatars8.githubusercontent.com
+
+# GitHub End
+```
+
 - 保存。
 
 #### 可能遇到的问题。如何以普通用户启动的Vim如何保存需要root权限的文件，答案是可以，执行这样一条命令即可：
@@ -42,3 +79,4 @@
 ![](https://raw.githubusercontent.com/we11cheng/picBed/master/20200420103128.png)
 
 ##### 查询ip地址<https://tools.ipip.net/dns.php>,找到响应最快的ip填入host文件。或者这个地址<https://www.ipaddress.com/>
+#### 究极解决办法全局科学上网。
