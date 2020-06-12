@@ -36,3 +36,5 @@ iPhone:/var/preferences root# rm -rf *.networkextension*
 iPhone:/var/preferences root# reboot
 ```
 这样每个 App 的联网权限设置均保存在这个文件里，删除这个文件后，所有权限会被还原成 “无线局域网与蜂窝移动”，可以再次按照自己的需求进行设置更改。
+
+#### 非越狱情况下推荐这个<https://github.com/Soulghost/AppleCellularFixup>
