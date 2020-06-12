@@ -110,3 +110,5 @@
 - ```2020-6-9```[Xcode 文件释疑](https://github.com/we11cheng/WCStudy/blob/master/Xcode%E9%87%8A%E7%96%91.md)
 - ```2010-6-10```[Mac系统Pycharm永久激活](https://github.com/we11cheng/WCStudy/blob/master/Mac%E7%B3%BB%E7%BB%9FPycharm%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB.md)
 - ```2020-6-10```[Mac 安装和管理多个 Python 版本](https://github.com/we11cheng/WCStudy/blob/master/Mac%20%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC.md)
+- ```2020-6-12```[iOS如何用fastlane重签名app](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%A6%82%E4%BD%95%E7%94%A8fastlane%E9%87%8D%E7%AD%BE%E5%90%8Dapp.md)
+- ```2020-6-12```[用python3重签名应用](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%BA%94%E7%94%A8%E9%87%8D%E7%AD%BE%E5%90%8D.md)
