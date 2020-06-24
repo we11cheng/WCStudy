@@ -113,3 +113,5 @@
 - ```2020-6-12```[iOS如何用fastlane重签名app](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%A6%82%E4%BD%95%E7%94%A8fastlane%E9%87%8D%E7%AD%BE%E5%90%8Dapp.md)
 - ```2020-6-12```[用python3重签名应用](https://github.com/we11cheng/WCStudy/blob/master/iOS%E5%BA%94%E7%94%A8%E9%87%8D%E7%AD%BE%E5%90%8D.md)
 - ```2020-6-18```[查看iOS App的bundleId](https://github.com/we11cheng/WCStudy/blob/master/%E6%9F%A5%E7%9C%8BiOS%20App%E7%9A%84bundleId.md)
+- ```2010-6-24```[更改Python更新源为国内源](https://github.com/we11cheng/WCStudy/blob/master/%E6%9B%B4%E6%94%B9Python%E6%9B%B4%E6%96%B0%E6%BA%90%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90.md)
+- ```2010-6-24```[Mac下通过Apple Configurator 2获取ipa包](https://github.com/we11cheng/WCStudy/blob/master/Mac%E4%B8%8B%E9%80%9A%E8%BF%87Apple%20Configurator%202%E8%8E%B7%E5%8F%96ipa%E5%8C%85.md)
