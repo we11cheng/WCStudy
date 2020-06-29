@@ -1,9 +1,15 @@
 ### frida-ios-dump实践
-### 新手砸壳教程（python3）,前提手机必须越狱&必须通过USB链接SSH。
+#### 新手砸壳教程（python3）,前提手机必须越狱&必须通过USB链接SSH。
+#### 查看当前设备使用python版本
+```
+~ » python -V                                                                  rby@rbydeMacBook-Pro
+Python 3.6.2
+~ » 
+```
 ### iOS端配置参考（越狱情况下）
-- 打开cydia 添加源：https://build.frida.re
+- 打开cydia 添加源：`https://build.frida.re`
 
-- 打开刚刚添加的源 安装 Frida
+- 打开刚刚添加的源 安装 Frida（选择适合自己手机系统的版本）
 
 - 安装完成
 
@@ -33,6 +39,7 @@ sudo pip3 install frida –upgrade –ignore-installed six
 frida --version
 12.0.3
 ```
+##### 需要注意的地方，电脑和手机的frida版本要保持一致，不一致可能会出问题。
 
 - 检查frida是否正常运行，任意mac终端输入```frida-ps -U```有数据返回表示成功安装，-U表示USB设备，-ps表示进程。
 
@@ -66,7 +73,7 @@ admindeMBP-4:~ admin$ frida-ps -U
 ...
 ```
 
-## USB&SSH连接iPhone，参考地址<https://www.jianshu.com/p/bf69cefc5f39>简单描述如下：
+#### USB&SSH连接iPhone，参考地址<https://www.jianshu.com/p/bf69cefc5f39>简单描述如下：
 
 - 安装usbmuxd（brew安装最简单暴力推荐使用brew安装）。  
 
@@ -76,7 +83,11 @@ brew install usbmuxd
 #### 如果你没有安装brew的话，那需要先执行  
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```      
+```
+- 安装OpenSSH
+
+![](https://raw.githubusercontent.com/we11cheng/picBed/master/WechatIMG1452.jpeg)
+
 - 手机通过数据线连接电脑。
       
 - 终端输入 
@@ -96,6 +107,19 @@ ssh -p 2222 root@127.0.0.1
 
 - 修改密码参考链接 <https://www.jianshu.com/p/725843850e1d>
 
+```
+ssh -p 2222 root@127.0.0.1                                                 rby@rbydeMacBook-Pro
+The authenticity of host '[127.0.0.1]:2222 ([127.0.0.1]:2222)' can't be established.
+RSA key fingerprint is SHA256:GXJI2exWQ528kEvqy9rypfY6jE7P8QvnfoSn+dCfsyg.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[127.0.0.1]:2222' (RSA) to the list of known hosts.
+root@127.0.0.1's password: 
+iPhone6S:~ root# passwd
+Changing password for root.
+New password:
+Retype new password:
+iPhone6S:~ root# 
+```
 
 ### 开始砸壳之旅
 
@@ -183,6 +207,8 @@ Localizable.strings: 12.6MB [00:02, 4.96MB/s]
 - 去壳后的ipa默认在frida-ios-dump目录下。
 
 #### 说明: 执行```dump.py bundle id```命令的时候要确保手机上已经打开你需要砸壳的app。
-### 说明: frida-ios-dump有对应python2分支，master分支对应python2，3.x对应python3版本，大家可以多看看作者最新提交情况。地址 <https://github.com/AloneMonkey/frida-ios-dump>
+#### 说明: frida-ios-dump有对应python2分支，master分支对应python2，3.x对应python3版本，大家可以多看看作者最新提交情况。地址 <https://github.com/AloneMonkey/frida-ios-dump>
+#### 最近一次更新时间 Mon Jun 29 15:40:00 CST 2020
+
 
 
