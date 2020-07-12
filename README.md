@@ -115,3 +115,8 @@
 - ```2020-6-18```[查看iOS App的bundleId](https://github.com/we11cheng/WCStudy/blob/master/%E6%9F%A5%E7%9C%8BiOS%20App%E7%9A%84bundleId.md)
 - ```2010-6-24```[更改Python更新源为国内源](https://github.com/we11cheng/WCStudy/blob/master/%E6%9B%B4%E6%94%B9Python%E6%9B%B4%E6%96%B0%E6%BA%90%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90.md)
 - ```2010-6-24```[Mac下通过Apple Configurator 2获取ipa包](https://github.com/we11cheng/WCStudy/blob/master/Mac%E4%B8%8B%E9%80%9A%E8%BF%87Apple%20Configurator%202%E8%8E%B7%E5%8F%96ipa%E5%8C%85.md)
+- ```2010-7-12```[coding上搭建Hexo博客](https://github.com/we11cheng/WCStudy/blob/master/coding%E4%B8%8A%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2.md)
+- ```2010-7-12```[git push refusing to merge unrelated histories](https://github.com/we11cheng/WCStudy/blob/master/refusing%20to%20merge%20unrelated%20histories.md)
+- ```2010-7-12```[Airtest 断言使用总结](https://github.com/we11cheng/WCStudy/blob/master/Airtest%20%E6%96%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93.md)
+- ```2010-7-12```[git branch 使用](https://github.com/we11cheng/WCStudy/blob/master/git%20branch%20%E4%BD%BF%E7%94%A8.md)
+- ```2010-7-12```[荣耀8 安装Xposed框架](https://github.com/we11cheng/WCStudy/blob/master/%E8%8D%A3%E8%80%808%20%E5%AE%89%E8%A3%85Xposed%E6%A1%86%E6%9E%B6.md)
