@@ -106,7 +106,7 @@
 - ```2020-6-9```[git stash使用](https://github.com/we11cheng/WCStudy/blob/master/git%20stash%E4%BD%BF%E7%94%A8.md)
 - ```2020-6-9```[git撤销修改(本地仓库操作)](https://github.com/we11cheng/WCStudy/blob/master/git%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9.md)
 - ```2020-6-9```[代码块积累](https://github.com/we11cheng/WCStudy/blob/master/%E4%BB%A3%E7%A0%81%E5%9D%97%E7%A7%AF%E7%B4%AF.md)
-- ```2020-6-9```[pod版本释疑(指定版本)](https://github.com/we11cheng/WCStudy/blob/master/pod%E7%89%88%E6%9C%AC%E9%87%8A%E7%96%91.md)
+- ```2020-6-9```[Cocoapods查看当前项目引入库的版本号&指定版本](https://github.com/we11cheng/WCStudy/blob/master/pod%E7%89%88%E6%9C%AC%E9%87%8A%E7%96%91.md)
 - ```2020-6-9```[Xcode 文件释疑](https://github.com/we11cheng/WCStudy/blob/master/Xcode%E9%87%8A%E7%96%91.md)
 - ```2010-6-10```[Mac系统Pycharm永久激活](https://github.com/we11cheng/WCStudy/blob/master/Mac%E7%B3%BB%E7%BB%9FPycharm%E6%B0%B8%E4%B9%85%E6%BF%80%E6%B4%BB.md)
 - ```2020-6-10```[Mac 安装和管理多个 Python 版本](https://github.com/we11cheng/WCStudy/blob/master/Mac%20%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%A1%E7%90%86%E5%A4%9A%E4%B8%AA%20Python%20%E7%89%88%E6%9C%AC.md)
