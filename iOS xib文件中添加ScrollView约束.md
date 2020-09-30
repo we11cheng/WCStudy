@@ -11,7 +11,7 @@
 
 ![](https://raw.githubusercontent.com/we11cheng/picBed/master/20190824114718.png)
 
-- 因为高度没有确定所以会报错，加一个固定大小(intrinsic size) ，这个约束报错就没有了。当当程序运行时ContentViw的 size 会根据你的约束重新改变,intrinsic size并不会影响你的约束。
+- 因为高度没有确定所以会报错，ContentView加一个固定大小(intrinsic size) ，这个约束报错就没有了。当当程序运行时ContentViw的 size 会根据你的约束重新改变,intrinsic size并不会影响你的约束。
 
 ![](https://raw.githubusercontent.com/we11cheng/picBed/master/20190824114821.png)
 
