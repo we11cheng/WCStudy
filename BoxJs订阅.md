@@ -1,5 +1,19 @@
 # BoxJs订阅 <https://t.me/chavyscripts>
 
+# 安装
+```
+QuanX Rewrite
+# 安装路径: 
+ ​ 风车 > 重写 > 引用
+​
+# QuanX 商店版 (AppStore)
+  https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf
+​
+# QuanX 测试版 (TestFlight)
+  https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf
+  
+```
+
  访问:  http://boxjs.com 管理
 
 【用box订阅的好处】

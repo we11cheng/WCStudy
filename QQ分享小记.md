@@ -4,6 +4,7 @@
 - 1Q:注册应用的时候，需要填写URL schema，这个是干嘛用的。
 - 1A: 设置这个URL schema是为了保证在分享完成或取消的时候自己的app 能被唤起,将申请的qq app id 转换为相应的 URL Schema得来。格式如下
 
+![](https://gitee.com/he11oworld/picBed/raw/master/20201130113507.png)
 
 ```
 "QQ" + 腾讯QQ互联应用appId 转换成十六进制 (不足8位前面补0). 例如：QQ05FA957C
@@ -165,6 +166,10 @@ echo 'ibase=10;obase=16;您的腾讯QQ互联应用Id'|bc
 - 3A:如图
 
 ![](https://raw.githubusercontent.com/we11cheng/picBed/master/20191223141758.png)
+
+微信直接填AppID
+
+![](https://gitee.com/he11oworld/picBed/raw/master/20201216181029.png)
 
 - 4Q:如何处理分享回调。
 - 4A:如下代码
